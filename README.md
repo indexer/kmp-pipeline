@@ -145,7 +145,24 @@ The notebook's `format_sample()` already reads `input_text`/`target_text` keys â
 
 ## Using with Qwen3-Coder Notebooks
 
-Same process â€” the notebooks use the same data format.
+For faster training with 2x performance improvements using Unsloth:
+
+**Notebook:** [`Qwen3_1.7B_KMP_FineTuning_Unsloth_T4.ipynb`](./Qwen3_1.7B_KMP_FineTuning_Unsloth_T4.ipynb)
+
+1. Upload `data/final_training/` to Google Drive
+2. Open the notebook in Google Colab
+3. In the data loading cell, update `DATA_DIR`:
+
+```python
+DATA_DIR = "/content/drive/MyDrive/kmp_training_data/final_training"
+```
+
+The Qwen3 notebook includes:
+- Unsloth optimizations for 2x faster training
+- 4-bit quantization via `unsloth/Qwen3-1.7B-unsloth-bnb-4bit`
+- Optimized for T4 GPU (15GB VRAM)
+- Native Qwen3 chat template formatting
+- Full method body validation metrics
 
 ## Configuration
 
