@@ -1,0 +1,163 @@
+2026-02-24 15:34:15,580 - __main__ - INFO - Validating environment...
+2026-02-24 15:34:15,667 - __main__ - INFO - ✓ Environment validation passed
+2026-02-24 15:34:15,667 - __main__ - INFO - Using data directory: /home/indexer/AI Projects/smlocal-llm/data
+2026-02-24 15:34:15,667 - __main__ - INFO - Running step: prepare
+======================================================================
+KMP Training Data Preparation Pipeline - Production Ready
+======================================================================
+
+📂 STEP 1: Loading training pairs...
+  train:  119,319 pairs
+  val  :    6,629 pairs
+  test :    6,629 pairs
+
+  Total loaded: 132,577 pairs
+
+🔄 Advanced deduplication...
+Exact dedup:   0%|          | 0/132577 [00:00<?, ?it/s]Exact dedup:  15%|█▍        | 19401/132577 [00:00<00:00, 193988.91it/s]Exact dedup:  30%|██▉       | 39135/132577 [00:00<00:00, 195954.39it/s]Exact dedup:  44%|████▍     | 58803/132577 [00:00<00:00, 196278.10it/s]Exact dedup:  59%|█████▉    | 78431/132577 [00:00<00:00, 196014.73it/s]Exact dedup:  74%|███████▍  | 98033/132577 [00:00<00:00, 195202.79it/s]Exact dedup:  89%|████████▉ | 118204/132577 [00:00<00:00, 197403.64it/s]Exact dedup: 100%|██████████| 132577/132577 [00:00<00:00, 196940.86it/s]
+  Exact dedup: 132,577 → 132,577
+Structural dedup:   0%|          | 0/132577 [00:00<?, ?it/s]Structural dedup:   4%|▎         | 4914/132577 [00:00<00:02, 49131.26it/s]Structural dedup:   7%|▋         | 9855/132577 [00:00<00:02, 49290.68it/s]Structural dedup:  11%|█▏        | 14976/132577 [00:00<00:02, 50164.84it/s]Structural dedup:  15%|█▌        | 19993/132577 [00:00<00:02, 50131.13it/s]Structural dedup:  19%|█▉        | 25007/132577 [00:00<00:02, 49999.91it/s]Structural dedup:  23%|██▎       | 30124/132577 [00:00<00:02, 50393.82it/s]Structural dedup:  27%|██▋       | 35251/132577 [00:00<00:01, 50678.68it/s]Structural dedup:  30%|███       | 40328/132577 [00:00<00:01, 50704.74it/s]Structural dedup:  34%|███▍      | 45457/132577 [00:00<00:01, 50886.29it/s]Structural dedup:  38%|███▊      | 50561/132577 [00:01<00:01, 50928.19it/s]Structural dedup:  42%|████▏     | 55654/132577 [00:01<00:01, 50670.69it/s]Structural dedup:  46%|████▌     | 60722/132577 [00:01<00:01, 50577.52it/s]Structural dedup:  50%|████▉     | 65787/132577 [00:01<00:01, 50594.97it/s]Structural dedup:  53%|█████▎    | 70866/132577 [00:01<00:01, 50650.96it/s]Structural dedup:  57%|█████▋    | 76019/132577 [00:01<00:01, 50914.71it/s]Structural dedup:  61%|██████    | 81111/132577 [00:01<00:01, 50904.17it/s]Structural dedup:  65%|██████▌   | 86306/132577 [00:01<00:00, 51217.71it/s]Structural dedup:  69%|██████▉   | 91428/132577 [00:01<00:00, 51023.85it/s]Structural dedup:  73%|███████▎  | 96531/132577 [00:01<00:00, 50797.47it/s]Structural dedup:  77%|███████▋  | 101612/132577 [00:02<00:00, 50673.29it/s]Structural dedup:  80%|████████  | 106680/132577 [00:02<00:00, 41209.67it/s]Structural dedup:  84%|████████▍ | 111307/132577 [00:02<00:00, 42512.11it/s]Structural dedup:  87%|████████▋ | 115995/132577 [00:02<00:00, 43684.43it/s]Structural dedup:  91%|█████████ | 120532/132577 [00:02<00:00, 43894.10it/s]Structural dedup:  94%|█████████▍| 125279/132577 [00:02<00:00, 44903.79it/s]Structural dedup:  98%|█████████▊| 130147/132577 [00:02<00:00, 45988.40it/s]Structural dedup: 100%|██████████| 132577/132577 [00:02<00:00, 48458.24it/s]
+  Structural dedup: 132,577 → 109,803
+
+📊 STEP 3: Calculating quality scores and filtering...
+Quality assessment:   0%|          | 0/109803 [00:00<?, ?it/s]Quality assessment:   1%|▏         | 1492/109803 [00:00<00:07, 14903.53it/s]Quality assessment:   3%|▎         | 3035/109803 [00:00<00:07, 15203.94it/s]Quality assessment:   4%|▍         | 4653/109803 [00:00<00:06, 15640.55it/s]Quality assessment:   6%|▌         | 6218/109803 [00:00<00:06, 15288.39it/s]Quality assessment:   7%|▋         | 7866/109803 [00:00<00:06, 15710.82it/s]Quality assessment:   9%|▊         | 9564/109803 [00:00<00:06, 16133.98it/s]Quality assessment:  10%|█         | 11306/109803 [00:00<00:05, 16549.12it/s]Quality assessment:  12%|█▏        | 12963/109803 [00:00<00:05, 16499.95it/s]Quality assessment:  13%|█▎        | 14614/109803 [00:00<00:05, 16484.15it/s]Quality assessment:  15%|█▍        | 16296/109803 [00:01<00:05, 16587.17it/s]Quality assessment:  16%|█▋        | 18017/109803 [00:01<00:05, 16775.83it/s]Quality assessment:  18%|█▊        | 19734/109803 [00:01<00:05, 16892.75it/s]Quality assessment:  20%|█▉        | 21424/109803 [00:01<00:05, 16856.07it/s]Quality assessment:  21%|██        | 23149/109803 [00:01<00:05, 16973.99it/s]Quality assessment:  23%|██▎       | 24847/109803 [00:01<00:05, 16921.87it/s]Quality assessment:  24%|██▍       | 26579/109803 [00:01<00:04, 17040.23it/s]Quality assessment:  26%|██▌       | 28305/109803 [00:01<00:04, 17103.95it/s]Quality assessment:  27%|██▋       | 30036/109803 [00:01<00:04, 17162.59it/s]Quality assessment:  29%|██▉       | 31753/109803 [00:01<00:04, 17086.76it/s]Quality assessment:  30%|███       | 33462/109803 [00:02<00:04, 17066.71it/s]Quality assessment:  32%|███▏      | 35169/109803 [00:02<00:04, 16960.65it/s]Quality assessment:  34%|███▎      | 36921/109803 [00:02<00:04, 17125.72it/s]Quality assessment:  35%|███▌      | 38634/109803 [00:02<00:04, 15169.95it/s]Quality assessment:  37%|███▋      | 40192/109803 [00:02<00:05, 13307.66it/s]Quality assessment:  38%|███▊      | 41681/109803 [00:02<00:04, 13706.48it/s]Quality assessment:  39%|███▉      | 43168/109803 [00:02<00:04, 14015.11it/s]Quality assessment:  41%|████      | 44644/109803 [00:02<00:04, 14219.74it/s]Quality assessment:  42%|████▏     | 46161/109803 [00:02<00:04, 14486.20it/s]Quality assessment:  43%|████▎     | 47725/109803 [00:03<00:04, 14815.71it/s]Quality assessment:  45%|████▍     | 49334/109803 [00:03<00:03, 15184.35it/s]Quality assessment:  46%|████▋     | 50891/109803 [00:03<00:03, 15295.94it/s]Quality assessment:  48%|████▊     | 52502/109803 [00:03<00:03, 15534.00it/s]Quality assessment:  49%|████▉     | 54082/109803 [00:03<00:03, 15608.90it/s]Quality assessment:  51%|█████     | 55648/109803 [00:03<00:03, 15490.00it/s]Quality assessment:  52%|█████▏    | 57275/109803 [00:03<00:03, 15713.46it/s]Quality assessment:  54%|█████▎    | 58850/109803 [00:03<00:03, 15721.02it/s]Quality assessment:  55%|█████▌    | 60425/109803 [00:03<00:03, 15666.82it/s]Quality assessment:  56%|█████▋    | 61994/109803 [00:03<00:03, 15207.65it/s]Quality assessment:  58%|█████▊    | 63631/109803 [00:04<00:02, 15542.42it/s]Quality assessment:  59%|█████▉    | 65189/109803 [00:04<00:03, 11815.20it/s]Quality assessment:  61%|██████    | 66505/109803 [00:04<00:03, 11439.93it/s]Quality assessment:  62%|██████▏   | 68006/109803 [00:04<00:03, 12316.26it/s]Quality assessment:  63%|██████▎   | 69573/109803 [00:04<00:03, 13186.16it/s]Quality assessment:  65%|██████▍   | 71099/109803 [00:04<00:02, 13745.11it/s]Quality assessment:  66%|██████▌   | 72580/109803 [00:04<00:02, 14041.63it/s]Quality assessment:  68%|██████▊   | 74145/109803 [00:04<00:02, 14497.78it/s]Quality assessment:  69%|██████▉   | 75686/109803 [00:04<00:02, 14751.19it/s]Quality assessment:  70%|███████   | 77185/109803 [00:05<00:02, 14790.37it/s]Quality assessment:  72%|███████▏  | 78681/109803 [00:05<00:02, 14742.29it/s]Quality assessment:  73%|███████▎  | 80167/109803 [00:05<00:02, 12898.09it/s]Quality assessment:  74%|███████▍  | 81506/109803 [00:05<00:02, 12714.13it/s]Quality assessment:  75%|███████▌  | 82811/109803 [00:05<00:02, 12224.59it/s]Quality assessment:  77%|███████▋  | 84339/109803 [00:05<00:01, 13050.19it/s]Quality assessment:  78%|███████▊  | 85820/109803 [00:05<00:01, 13539.66it/s]Quality assessment:  79%|███████▉  | 87196/109803 [00:05<00:01, 13582.46it/s]Quality assessment:  81%|████████  | 88681/109803 [00:05<00:01, 13947.94it/s]Quality assessment:  82%|████████▏ | 90174/109803 [00:06<00:01, 14229.31it/s]Quality assessment:  84%|████████▎ | 91729/109803 [00:06<00:01, 14616.53it/s]Quality assessment:  85%|████████▍ | 93238/109803 [00:06<00:01, 14754.31it/s]Quality assessment:  86%|████████▋ | 94797/109803 [00:06<00:01, 15000.16it/s]Quality assessment:  88%|████████▊ | 96301/109803 [00:06<00:00, 14291.04it/s]Quality assessment:  89%|████████▉ | 97768/109803 [00:06<00:00, 14399.73it/s]Quality assessment:  90%|█████████ | 99227/109803 [00:06<00:00, 14452.56it/s]Quality assessment:  92%|█████████▏| 100698/109803 [00:06<00:00, 14527.52it/s]Quality assessment:  93%|█████████▎| 102155/109803 [00:06<00:00, 14511.97it/s]Quality assessment:  94%|█████████▍| 103609/109803 [00:06<00:00, 14440.35it/s]Quality assessment:  96%|█████████▌| 105055/109803 [00:07<00:00, 12896.57it/s]Quality assessment:  97%|█████████▋| 106592/109803 [00:07<00:00, 13574.83it/s]Quality assessment:  98%|█████████▊| 108105/109803 [00:07<00:00, 14011.83it/s]Quality assessment: 100%|█████████▉| 109633/109803 [00:07<00:00, 14373.12it/s]Quality assessment: 100%|██████████| 109803/109803 [00:07<00:00, 14813.50it/s]
+2026-02-24 15:34:32,472 - __main__ - INFO - 
+============================================================
+2026-02-24 15:34:32,472 - __main__ - INFO - ✅ Pipeline completed successfully!
+2026-02-24 15:34:32,472 - __main__ - INFO - ============================================================
+
+  Quality filtered: 109,803 → 103,435
+
+  Rejection reasons (top 10):
+    input_too_long                   1,858  (  1.7%)
+    not_kotlin_code                  1,593  (  1.5%)
+    unbalanced_parens                1,319  (  1.2%)
+    quality_too_low                    806  (  0.7%)
+    unbalanced_braces                  770  (  0.7%)
+    target_too_long                     22  (  0.0%)
+
+⚖️ Quality-weighted balancing...
+  composable                                18,486 →  18,486  (avg quality: 2.30)
+  description_to_code                       26,257 →  26,257  (avg quality: 1.85)
+  expect_actual                              4,011 →   4,011  (avg quality: 3.23)
+  full_file                                 34,509 →  34,509  (avg quality: 1.90)
+  gradle                                     1,370 →   1,370  (avg quality: 1.76)
+  interface_implementation                  18,639 →  18,639  (avg quality: 2.77)
+  skeleton_to_complete                         163 →     163  (avg quality: 1.62)
+
+  Total after balancing: 103,435
+
+🎲 STEP 5: Sampling 50,000 from 103,435...
+  Sampled: 50,000 pairs
+
+📑 Creating stratified splits...
+  full_file                                T:13,155 V: 731 T: 731
+  description_to_code                      T:9,804 V: 545 T: 545
+  composable                               T:8,455 V: 470 T: 470
+  interface_implementation                 T:10,489 V: 583 T: 583
+  expect_actual                            T:2,565 V: 143 T: 143
+  gradle                                   T:  465 V:  26 T:  26
+  skeleton_to_complete                     T:   63 V:   4 T:   4
+
+  Final splits: Train=44,996, Val=2,502, Test=2,502
+
+💾 STEP 7: Saving final datasets...
+  train:   44,996 → train.jsonl
+  val  :    2,502 → val.jsonl
+  test :    2,502 → test.jsonl
+  combined:   47,498 → all_train.jsonl
+
+======================================================================
+📊 COMPREHENSIVE STATISTICS
+======================================================================
+
+  Dataset Distribution:
+    Train:    44,996  ( 90.0%)
+    Val:       2,502  (  5.0%)
+    Test:      2,502  (  5.0%)
+    ────────────────────────────────────────
+    Total:    50,000
+
+  Pair Type Distribution:
+    full_file                                 14,617  ( 29.2%)  ██████████████
+    interface_implementation                  11,655  ( 23.3%)  ███████████
+    description_to_code                       10,894  ( 21.8%)  ██████████
+    composable                                 9,395  ( 18.8%)  █████████
+    expect_actual                              2,851  (  5.7%)  ██
+    gradle                                       517  (  1.0%)  
+    skeleton_to_complete                          71  (  0.1%)  
+
+  Quality Score Distribution:
+    Mean:         2.45
+    Median:       2.30
+    Min:          1.00
+    Max:          5.30
+    25th %ile:    2.00
+    75th %ile:    3.00
+
+  Token Count Statistics:
+    Input Tokens:
+      Mean:        74
+      Median:      48
+      Max:        997
+    Target Tokens:
+      Mean:       709
+      Median:     501
+      Max:      5,966
+
+  KMP-Specific Features:
+    KMP patterns (expect/actual):      8,111  ( 16.2%)
+    Modern Kotlin features:           25,156  ( 50.3%)
+    Well-documented:                   9,402  ( 18.8%)
+
+  Source Set Distribution:
+    commonMain                 34,161  ( 68.3%)
+    commonTest                  4,283  (  8.6%)
+    androidMain                 4,227  (  8.5%)
+    desktopMain                 2,751  (  5.5%)
+    jsMain                      1,709  (  3.4%)
+    iosMain                     1,437  (  2.9%)
+    build_config                  517  (  1.0%)
+    androidTest                   497  (  1.0%)
+    nativeMain                    315  (  0.6%)
+    iosTest                       103  (  0.2%)
+
+  High-Quality Sample:
+    Type:         interface_implementation
+    Quality:      5.30
+    Flags:        kmp_expect_actual, valuable_pair_type, well_documented, includes_tests, modern_kotlin
+    Input length: 127 chars, ~31 tokens
+    Target length: 2710 chars, ~677 tokens
+
+    INPUT:
+    // Source set: commonTest
+// Implement this interface with full method bodies:
+fun interface Cancellation {
+
+    fun cancel()
+}
+
+    TARGET (preview):
+    import coil3.fetch.Fetcher
+    import coil3.request.ImageRequest
+    import coil3.test.utils.FakeImage
+    import coil3.test.utils.RobolectricTest
+    import coil3.test.utils.context
+    import kotlin.coroutines.EmptyCoroutineContext
+    import kotlin.test.AfterTest
+    import kotlin.test.BeforeTest
+    import kotlin.test.Test
+    import kotlin.test.assertFalse
+    import kotlin.test.assertSame
+    import kotlin.test.assertTrue
+    ... (81 more lines)
+
+======================================================================
+✅ Production-ready data preparation complete!
+======================================================================
+
+Next steps:
+  1. Upload data/final_training/ to Google Drive
+  2. In Colab, mount Drive and set DATA_PATHS
+  3. Use train.jsonl for training, val.jsonl for validation
+  4. Evaluate on test.jsonl for final metrics
