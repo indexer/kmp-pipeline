@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data directories (large files)
+data/repos/
+data/raw_blocks/
+data/training_pairs/
+data/final_training/
+data/metadata/
+
+# Keep the data directory structure but ignore contents
+!data/.gitkeep
+!data/repos/.gitkeep
+!data/raw_blocks/.gitkeep
+!data/training_pairs/.gitkeep
+!data/final_training/.gitkeep
+!data/metadata/.gitkeep
+
+# Large model files
+*.gguf
+*.bin
+*.safetensors
+
+# Logs
+*.log
+pipeline.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS files
+Thumbs.db
